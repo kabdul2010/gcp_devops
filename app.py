@@ -3,6 +3,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from Cloud Build!"
+    return "Hello from Cloud Build! test1"
 
 app.run(host="0.0.0.0", port=8080)
