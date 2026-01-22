@@ -1,5 +1,5 @@
 steps:
-  # Step 1: Build Docker image113
+  # Step 1: Build Docker image
   - name: 'gcr.io/cloud-builders/docker'
     args:
       [
@@ -36,3 +36,6 @@ steps:
 
 images:
   - asia-south1-docker.pkg.dev/$PROJECT_ID/demo/python-hello:$SHORT_SHA
+
+options:
+  logging: CLOUD_LOGGING_ONLY
